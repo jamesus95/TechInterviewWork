@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Jobaline Tech Interview</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="jquery-1.11.2.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="https://www.google.com/jsapi"></script>
+	<script src="loadFeed.js"></script>
+	<script src="tabSwitch.js"></script>
+	<script src="refresh.js"></script>
+
+	<script>google.load("feeds", "1")</script>
+	
+</head>
+
+<body>
+	<div class="col-xs-12 buttonRow">
+		<button onclick='tabSwitch("sports")'>Sports</button>
+		<button onclick='tabSwitch("entertainment")'>Entertainment</button>
+		<button onclick='tabSwitch("tech")'>Technology</button>
+	</div>
+	<div class="col-xs-12 buttonRow">
+		<button onclick="refresh()">Reload</button>
+	</div>
+	<div class="col-xs-12 content active" id="sports">
+		<script>loadFeed("sports")</script>
+	</div>
+	<br>
+	<div class="col-xs-12 content hidden noload" id="entertainment">
+	</div>
+	<br>
+	<div class="col-xs-12 content hidden noload" id="tech">
+	</div>
+</body>
+
+</html>

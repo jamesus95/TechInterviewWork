@@ -1,0 +1,23 @@
+.entry {
+	min-height: 150px;
+}
+
+.buttonRow {
+	min-height: 50px;
+}
+
+#sports {
+	background-color: lightblue;
+}
+
+#entertainment {
+	background-color: orange;
+}
+
+#tech {
+	background-color: magenta;
+}
+
+.buttonRow {
+	background-color: lightgreen;
+}
